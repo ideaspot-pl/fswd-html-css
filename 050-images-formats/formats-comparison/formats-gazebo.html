@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Formats Comparison - Photos</title>
+
+    <style>
+        body, h2 {
+            font-family: sans-serif;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-content: center;
+        }
+        .card {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .card img {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+        p {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <h2>JPG Quality 100</h2>
+        <img src="./gazebo-q100.jpg" alt="JPG Quality 100">
+        <p>1052 KB</p>
+    </div>
+    <div class="card">
+        <h2>JPG Quality 85</h2>
+        <img src="./gazebo-q85.jpg" alt="JPG Quality 85">
+        <p>409 KB</p>
+    </div>
+    <div class="card">
+        <h2>JPG Quality 45</h2>
+        <img src="./gazebo-q45.jpg" alt="JPG Quality 45">
+        <p>162 KB</p>
+    </div>
+    <div class="card">
+        <h2>JPG Quality 10</h2>
+        <img src="./gazebo-q10.jpg" alt="JPG Quality 10">
+        <p>45 KB</p>
+    </div>
+    <div class="card">
+        <h2>PNG</h2>
+        <img src="./gazebo.png" alt="PNG">
+        <p>3202 KB</p>
+    </div>
+    <div class="card">
+        <h2>GIF</h2>
+        <img src="./gazebo.gif" alt="GIF">
+        <p>1603 KB</p>
+    </div>
+    <div class="card">
+        <h2>WebP</h2>
+        <img src="./gazebo.webp" alt="WEBP">
+        <p>287 KB</p>
+    </div>
+</div>
+</body>
+</html>

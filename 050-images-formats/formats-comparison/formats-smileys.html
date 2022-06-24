@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Formats Comparison - Smileys</title>
+
+    <style>
+        body, h2 {
+            font-family: sans-serif;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .card {
+            width: 250px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .card img {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+        p {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <h2>JPG Quality 100</h2>
+        <img src="./smileys-q100.jpg" alt="JPG Quality 100">
+        <p>418 KB</p>
+    </div>
+    <div class="card">
+        <h2>JPG Quality 85</h2>
+        <img src="./smileys-q85.jpg" alt="JPG Quality 85">
+        <p>99 KB</p>
+    </div>
+    <div class="card">
+        <h2>JPG Quality 45</h2>
+        <img src="./smileys-q45.jpg" alt="JPG Quality 45">
+        <p>46 KB</p>
+    </div>
+    <div class="card">
+        <h2>JPG Quality 10</h2>
+        <img src="./smileys-q10.jpg" alt="JPG Quality 10">
+        <p>24 KB</p>
+    </div>
+    <div class="card">
+        <h2>PNG</h2>
+        <img src="./smileys.png" alt="PNG">
+        <p>404 KB</p>
+    </div>
+    <div class="card">
+        <h2>GIF</h2>
+        <img src="./smileys.gif" alt="GIF">
+        <p>210 KB</p>
+    </div>
+    <div class="card">
+        <h2>PNG -> WebP</h2>
+        <img src="./smileys.webp" alt="WEBP">
+        <p>234 KB</p>
+    </div>
+    <div class="card">
+        <h2>JPG Q85 -> WebP</h2>
+        <img src="./smileys-q85.webp" alt="WEBP">
+        <p>46 KB</p>
+    </div>
+</div>
+</body>
+</html>
