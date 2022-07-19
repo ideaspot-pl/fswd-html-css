@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo-Elements</title>
+    <link rel="stylesheet" href="../../vendor/normalize.css">
+    <style>
+        body {
+            margin: 30px;
+        }
+
+        p::first-letter {
+            font-size: 2em;
+            float: left;
+            padding: 0 2px 0 0
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        p:nth-child(-n+2)::after {
+            content: ' ';
+            display: block;
+            width: 30%;
+            border-bottom: 1px solid black;
+            margin: 20px auto;
+        }
+
+        input::file-selector-button {
+            border: 1px solid black;
+            background: none;
+            padding: 10px;
+        }
+
+        li::marker {
+            content: '+ ';
+        }
+        li.active::marker {
+            content: '-- ';
+        }
+
+    </style>
+</head>
+<body>
+
+<p>Candy canes jujubes cake biscuit halvah candy gingerbread. Toffee toffee sugar plum cupcake pudding muffin oat cake. Cake jelly chocolate biscuit chocolate cake icing. Jujubes jelly candy canes chupa chups marshmallow cheesecake. Pastry tootsie roll cake jelly beans oat cake. Liquorice pastry soufflé soufflé soufflé pudding sesame snaps tiramisu. Jelly cheesecake cheesecake caramels jelly beans chocolate bar cake muffin. Lemon drops oat cake apple pie icing candy canes oat cake chocolate cake topping. Pie biscuit carrot cake bear claw liquorice oat cake donut powder. Brownie dessert cupcake candy canes biscuit. Lollipop gummies icing soufflé toffee shortbread caramels tart. Fruitcake marshmallow caramels bonbon cake jelly soufflé. Dessert sugar plum tiramisu bonbon ice cream tart cake bonbon.</p>
+<p>Jujubes cake biscuit halvah candy gingerbread. Toffee toffee sugar plum cupcake pudding muffin oat cake. Cake jelly chocolate biscuit chocolate cake icing. Jujubes jelly candy canes chupa chups marshmallow cheesecake. Pastry tootsie roll cake jelly beans oat cake. Liquorice pastry soufflé soufflé soufflé pudding sesame snaps tiramisu. Jelly cheesecake cheesecake caramels jelly beans chocolate bar cake muffin. Lemon drops oat cake apple pie icing candy canes oat cake chocolate cake topping. Pie biscuit carrot cake bear claw liquorice oat cake donut powder. Brownie dessert cupcake candy canes biscuit. Lollipop gummies icing soufflé toffee shortbread caramels tart. Fruitcake marshmallow caramels bonbon cake jelly soufflé. Dessert sugar plum tiramisu bonbon ice cream tart cake bonbon.</p>
+<p>Halvah candy gingerbread. Toffee toffee sugar plum cupcake pudding muffin oat cake. Cake jelly chocolate biscuit chocolate cake icing. Jujubes jelly candy canes chupa chups marshmallow cheesecake. Pastry tootsie roll cake jelly beans oat cake. Liquorice pastry soufflé soufflé soufflé pudding sesame snaps tiramisu. Jelly cheesecake cheesecake caramels jelly beans chocolate bar cake muffin. Lemon drops oat cake apple pie icing candy canes oat cake chocolate cake topping. Pie biscuit carrot cake bear claw liquorice oat cake donut powder. Brownie dessert cupcake candy canes biscuit. Lollipop gummies icing soufflé toffee shortbread caramels tart. Fruitcake marshmallow caramels bonbon cake jelly soufflé. Dessert sugar plum tiramisu bonbon ice cream tart cake bonbon.</p>
+
+<div>
+    <input type="file">
+</div>
+
+<div>
+    <ul>
+        <li>Item 1</li>
+        <li class="active">Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+</div>
+</body>
+</html>

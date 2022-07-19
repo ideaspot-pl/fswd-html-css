@@ -1,0 +1,13 @@
+li {
+    font-family: sans-serif;
+}
+#first {
+    color: red;
+}
+#second {
+    color: green;
+    font-family: serif;
+}
+#third {
+    color: blue;
+}

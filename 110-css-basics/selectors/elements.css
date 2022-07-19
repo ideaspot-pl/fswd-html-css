@@ -1,0 +1,8 @@
+body {
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+h1, h2, h3 {
+    font-variant: small-caps;
+}

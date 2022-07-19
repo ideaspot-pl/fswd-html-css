@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Units</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        div {
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid #969696;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h2>Font Size Units</h2>
+<table>
+    <tr>
+        <th>Unit</th>
+        <th>Examples</th>
+    </tr>
+    <tr>
+        <th>px</th>
+        <td>
+            <span style="font-size: 10px;">10px</span>
+            <span style="font-size: 14px;">14px</span>
+            <span style="font-size: 18px;">18px</span>
+            <span style="font-size: 24px;">24px</span>
+        </td>
+    </tr>
+    <tr style="font-size: 10px;">
+        <th>em</th>
+        <td>
+            <span style="font-size: 0.8em;">0.8em</span>
+            <span style="font-size: 1em;">1em</span>
+            <span style="font-size: 1.5em;">1.5em</span>
+            <span style="font-size: 2em;">2em</span>
+        </td>
+    </tr>
+    <tr style="font-size: 20px;">
+        <th>ex</th>
+        <td>
+            <span style="font-size: 0.8ex;">0.8ex</span>
+            <span style="font-size: 1ex;">1ex</span>
+            <span style="font-size: 1.5ex;">1.5ex</span>
+            <span style="font-size: 2ex;">2ex</span>
+        </td>
+    </tr>
+    <tr>
+        <th>rem</th>
+        <td>
+            <span style="font-size: 0.8rem;">0.8rem</span>
+            <span style="font-size: 1rem;">1rem</span>
+            <span style="font-size: 1.5rem;">1.5rem</span>
+            <span style="font-size: 2rem;">2rem</span>
+        </td>
+    </tr>
+</table>
+
+<h2>Container Size Units</h2>
+
+<h3>px</h3>
+<div style="width: 150px;">150px;</div>
+<div style="width: 200px;">200px;</div>
+
+<h3>%</h3>
+<div style="width: 25%;">25%;</div>
+<div style="width: 50%;">50%;</div>
+
+<h3>em / rem</h3>
+<div style="width: 10em;">10em;</div>
+<div style="width: 20em;">20em;</div>
+
+<h3>vh</h3>
+<div style="width: 25vh;">25vh;</div>
+<div style="width: 50vh;">50vh;</div>
+
+<h3>vw</h3>
+<div style="width: 25vw;">25vw;</div>
+<div style="width: 50vw;">50vw;</div>
+
+<h3>vmin / vmax</h3>
+<div style="width: 25vmin;">25vmin;</div>
+<div style="width: 25vmax;">25vmax;</div>
+
+
+</body>
+</html>

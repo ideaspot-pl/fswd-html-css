@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>:checked</title>
+    <link rel="stylesheet" href="../../vendor/normalize.css">
+    <style>
+        body {
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        #section-checked input[type="checkbox"] {
+            appearance: none;
+            outline: none;
+            width: 1.5em;
+            height: 1.5em;
+            border: 1px solid black;
+            border-radius: 0.4em;
+            margin-right: 5px;
+        }
+        #section-checked input[type="checkbox"]:checked {
+            background-color: lime;
+        }
+        #section-checked div.container {
+            display: flex;
+        }
+        #section-checked label {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<section id="section-checked">
+    <h1>:checked</h1>
+    <div class="container">
+        <label><input type="checkbox">Check 1</label>
+        <label><input type="checkbox">Check 2</label>
+        <label><input type="checkbox">Check 3</label>
+    </div>
+</section>
+</body>
+</html>

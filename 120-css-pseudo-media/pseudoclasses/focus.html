@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>:focus, :focus-within</title>
+    <link rel="stylesheet" href="../../vendor/normalize.css">
+    <style>
+        body {
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text-styled:focus {
+            outline-color: lime;
+        }
+
+        label:focus-within {
+            color: lime;
+        }
+    </style>
+</head>
+<body>
+<section id="section-focus">
+    <h1>:focus, :focus-within</h1>
+    <label>Put some text here:
+        <input class="text-styled" type="text" placeholder="Nothing here yet!">
+    </label><br>
+    <label>Put some text here:
+        <input class="text-styled" type="text" placeholder="Nothing here yet!">
+    </label>
+</section>
+</body>
+</html>

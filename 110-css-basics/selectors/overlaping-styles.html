@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="../../vendor/normalize.css">
+
+    <style>
+        body {
+            margin: 30px;
+        }
+
+        h1, p {
+            color: #17dccb;
+        }
+        h1, p {
+            color: #3c3c3c; /* last definition wins */
+        }
+
+        p.text-center {
+            text-align: center; /* more detailed selector wins */
+        }
+
+        p {
+            text-align: justify; /* less detailed selector loses */
+        }
+
+        p.italics {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<h1>Cupcakes are Yummy</h1>
+<p id="p1">Brownie chupa chups cheesecake jelly beans brownie chocolate cake. Cotton candy croissant muffin marshmallow chocolate pie macaroon. Caramels gingerbread sesame snaps apple pie pie toffee danish topping liquorice.</p>
+<p id="p2" class="text-center italics">Brownie chupa chups cheesecake jelly beans brownie chocolate cake. Cotton candy croissant muffin marshmallow chocolate pie macaroon. Caramels gingerbread sesame snaps apple pie pie toffee danish topping liquorice.</p>
+<p id="p3">Brownie chupa chups cheesecake jelly beans brownie chocolate cake. Cotton candy croissant muffin marshmallow chocolate pie macaroon. Caramels gingerbread sesame snaps apple pie pie toffee danish topping liquorice.</p>
+</body>
+</html>

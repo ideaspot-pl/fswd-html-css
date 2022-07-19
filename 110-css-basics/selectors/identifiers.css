@@ -1,0 +1,10 @@
+body {
+    margin: 30px;
+}
+
+#headings {
+    border: 1px solid red;
+    background-color: #ff9090;
+    padding: 15px;
+    text-align: center;
+}

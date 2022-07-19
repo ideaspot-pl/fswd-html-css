@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>:in-range, :out-of-range</title>
+    <link rel="stylesheet" href="../../vendor/normalize.css">
+    <style>
+        body {
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #section-range :in-range {
+            color: lime;
+        }
+        #section-range :out-of-range {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<section id="section-range">
+    <h1>:in-range, :out-of-range</h1>
+    <input type="number" min="1" max="2" value="0">
+</section>
+
+</body>
+</html>

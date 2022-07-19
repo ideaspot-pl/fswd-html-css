@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>:visited, :hover</title>
+    <link rel="stylesheet" href="../../vendor/normalize.css">
+    <style>
+        body {
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        a.styled {
+            color: #858585;
+            text-decoration: none;
+        }
+        a.styled:hover {
+            color: #ff6363;
+            text-decoration: underline;
+        }
+        a.styled:visited {
+            color: #02ff4d;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <h1>:visited, :hover</h1>
+    <a href="https://ispot.link/fh">This is a default link</a> | <a class="styled" href="https://ispot.link/fh">This is a styled link</a><br>
+</section>
+</body>
+</html>

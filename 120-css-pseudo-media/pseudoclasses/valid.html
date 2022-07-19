@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>:valid, :invalid</title>
+    <link rel="stylesheet" href="../../vendor/normalize.css">
+    <style>
+        body {
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        #section-valid :valid {
+            color: lime;
+        }
+        #section-valid :invalid {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<section id="section-valid">
+    <h1>:valid :invalid</h1>
+    <input type="text" pattern="\d+">
+</section>
+
+</body>
+</html>
