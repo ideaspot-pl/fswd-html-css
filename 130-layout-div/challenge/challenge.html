@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic Tags Challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        div {
+            float: left;
+            width: 100%;
+        }
+        .header {
+            background-color: #facccc;
+        }
+        .sidebar {
+            background-color: #cdffcd;
+        }
+        .main-content {
+            background-color: #c8c8fc;
+        }
+        @media (min-width: 420px) {
+            .sidebar {
+                width: 30%;
+            }
+            .main-content {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>This is header.</h1>
+</div>
+<div class="sidebar">
+    <p>This is sidebar.</p>
+</div>
+<div class="main-content">
+    <p>This is main content.</p>
+</div>
+</body>
+</html>

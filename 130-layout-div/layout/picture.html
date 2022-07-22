@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        img {width: 50%; display: block; margin: 0 auto}
+    </style>
+</head>
+<body>
+<picture>
+    <!-- biggest at the top; first one matching is loaded -->
+    <source media="(min-width: 400px)" srcset="../../resources/gazebo.jpg">
+    <source media="(min-width: 200px)" srcset="../../resources/tile.jpg">
+    <img src="../../resources/ladybird.png" alt="Image Swap Example">
+</picture>
+</body>
+</html>

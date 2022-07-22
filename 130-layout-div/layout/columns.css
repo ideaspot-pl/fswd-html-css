@@ -1,0 +1,21 @@
+div {
+    float: left;
+    width: 100%;
+}
+.header {
+    background-color: #facccc;
+}
+.sidebar {
+    background-color: #cdffcd;
+}
+.main-content {
+    background-color: #c8c8fc;
+}
+@media (min-width: 420px) {
+    .sidebar {
+        width: 30%;
+    }
+    .main-content {
+        width: 70%;
+    }
+}
