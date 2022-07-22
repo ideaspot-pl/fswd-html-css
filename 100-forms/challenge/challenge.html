@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms Challenge</title>
+</head>
+<body>
+<form method="post" action="challenge.html">
+    <!--
+        fields (all required):
+
+        username pattern [a-z][a-z0-9]{2,9}, max 10 characters
+        firstname
+        lastname
+        birthday
+        email
+        password pattern [a-zA-Z0-9]{8,}
+        submit
+    -->
+
+    <input type="submit" value="Register">
+</form>
+
+
+<script>
+    let form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        let formData = new FormData(form);
+        let message = 'Data that would be submitted:\n';
+        for (let pair of formData.entries()) {
+            message += `${pair[0]}: ${pair[1]}\n`;
+        }
+        alert(message);
+    });
+</script>
+</body>
+</html>
