@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Layout Challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        header, aside, main {
+            float: left;
+            width: 100%;
+        }
+        header {
+            background-color: #facccc;
+        }
+        aside {
+            background-color: #cdffcd;
+        }
+        main {
+            background-color: #c8c8fc;
+        }
+        @media (min-width: 420px) {
+            aside {
+                width: 30%;
+            }
+            main {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>This is header.</h1>
+</header>
+<aside>
+    <p>This is sidebar.</p>
+</aside>
+<main>
+    <p>This is main content.</p>
+</main>
+</body>
+</html>

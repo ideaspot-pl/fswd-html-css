@@ -2,13 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Container - flex-flow</title>
-    <link rel="stylesheet" href="common.css">
+    <title>Container - align-content</title>
+    <link rel="stylesheet" href="../common.css">
     <style>
         .container {
+            height: 200px;
             display: flex;
             flex-flow: row wrap;
-            /*flex-flow: row-reverse nowrap;*/
+
+            /*align-content: stretch; !* default *!*/
+            /*align-content: space-between;*/
+            /*align-content: space-around;*/
+            /*align-content: center;*/
+            /*align-content: flex-start;*/
+            /*align-content: flex-end;*/
+        }
+
+        .item {
+            height: auto;
         }
     </style>
 </head>
