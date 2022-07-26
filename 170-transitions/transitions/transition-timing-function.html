@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition Timing Function</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+        .container {
+            width: 400px;
+            display: block;
+            border-left: 1px solid #2cc29e;
+            border-right: 1px solid #2cc29e;
+        }
+
+        .item {
+            display: block;
+            width: 100px;
+            height: 30px;
+            background-color: #2cc29e;
+            margin: 10px;
+            padding: 10px;
+            transition: width 2s;
+        }
+        .item:hover, .item.active {
+            width: 360px;
+        }
+    </style>
+</head>
+<body>
+<button>Go!</button>
+<div class="container">
+    <div class="item" style="transition-timing-function: ease">ease (default)</div>
+    <div class="item" style="transition-timing-function: ease-in-out">ease-in-out</div>
+    <div class="item" style="transition-timing-function: linear">linear</div>
+    <div class="item" style="transition-timing-function: ease-in">ease-in</div>
+    <div class="item" style="transition-timing-function: ease-out">ease-out</div>
+    <div class="item" id="bezier" style="transition-timing-function: cubic-bezier(0,0,1,1)">cubic-bezier (p0,p1,p2,p3)</div>
+</div>
+
+<script>
+    let button = document.querySelector('button');
+    button.addEventListener('click', () => {
+        let items = document.querySelectorAll('.item');
+        for (let item of items) {
+            item.className = item.className === 'item' ? 'item active' : 'item';
+        }
+    });
+</script>
+</body>
+</html>
