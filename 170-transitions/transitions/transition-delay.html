@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition-delay</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 30px;
+        }
+        div {
+            width: 100px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+
+            background-color: red;
+            transition: background-color 500ms;
+            transition-delay: 1s;
+        }
+        div:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<div>Hover!</div>
+</body>
+</html>

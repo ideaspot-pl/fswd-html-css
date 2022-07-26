@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition Challenge</title>
+    <style>
+        .court {
+            border: 1px solid black;
+            width: 300px;
+            height: 150px;
+            position: relative;
+        }
+
+        .net {
+            position: absolute;
+            left: 148px;
+            height: 150px;
+            width: 4px;
+            background-color: black;
+        }
+
+        .volleyball {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border: 2px solid black;
+            border-radius: 17px;
+            top: 55px;
+
+            transition: left 2s ease-in-out;
+        }
+        .volleyball.serve {
+            left: 15px;
+        }
+        .volleyball.bump {
+            left: 250px;
+        }
+    </style>
+</head>
+<body>
+<div class="court">
+    <div class="net"></div>
+    <div class="volleyball serve"></div>
+</div>
+
+<script>
+    let ball = document.querySelector('.volleyball');
+    setInterval(() => {
+        ball.className = ball.className === 'volleyball serve' ? 'volleyball bump' : 'volleyball serve';
+    }, 2000);
+</script>
+
+</body>
+</html>
