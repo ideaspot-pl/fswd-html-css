@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 1em;
+  width: 100%;
+  background-color: @containerBgColor;
+
+  @media screen and (min-width: @breakpointM) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: @breakpointL) {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}

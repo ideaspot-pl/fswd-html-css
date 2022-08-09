@@ -1,0 +1,30 @@
+@backgroundColor: red;
+//@backgroundColor: rgb(115, 169, 227);
+//@backgroundColor: hsl(127, 65%, 65%);
+//@backgroundColor: hsl(180, 65%, 65%);
+//@backgroundColor: hsl(295, 56%, 37%);
+
+
+@fontColor: white;
+//@fontColor: lighten(@backgroundColor, 30%);
+//@fontColor: darken(@backgroundColor, 30%);
+
+@mixColor: #000000;
+
+.container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+}
+
+.item {
+  padding: 10px;
+  text-align: center;
+  background-color: @backgroundColor;
+  color: @fontColor;
+
+  &:hover {
+    background-color: fade(@backgroundColor, 30%);
+    //background-color: mix(@backgroundColor, @mixColor)
+  }
+}

@@ -1,0 +1,51 @@
+@import (inline) "../../vendor/reset.css";
+
+// set variables for @colorPrimary, @colorInfo, @colorWarning and @colorSuccess
+// ...
+
+// provide a customizable weight for tint() function - @backgroundTintWeight
+// ...
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1em;
+  // use @colorPrimary for fonts
+  // ...
+}
+
+.alert {
+  display: block;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 3px;
+
+  // set @colorPrimary for border and font color
+  // ...
+
+  // use tint() function to obtain a lighter background of the alerts
+  // ...
+
+  dt {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+
+
+  &-info {
+    // set border and color to @colorInfo; set background-color to a tinted color
+    // ...
+  }
+
+  &-warning {
+    // set border and color to @colorWarning; set background-color to a tinted color
+    // ...
+  }
+
+  &-success {
+    // set border and color to @colorSuccess; set background-color to a tinted color
+    // ...
+  }
+}

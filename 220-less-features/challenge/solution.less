@@ -1,0 +1,50 @@
+@import (inline) "../../vendor/reset.css";
+
+@colorPrimary: #3C3C3C;
+@colorInfo: #0000ff;
+@colorWarning: #ffb600;
+@colorSuccess: #0cc90c;
+
+@backgroundTintWeight: 80%;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1em;
+  color: @colorPrimary;
+}
+
+.alert {
+  display: block;
+  padding: 1em;
+  margin: 1em 0;
+  border: 1px solid @colorPrimary;
+  border-radius: 3px;
+  background-color: tint(@colorPrimary, @backgroundTintWeight);
+  color: @colorPrimary;
+
+  dt {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+
+  &-info {
+    border: 1px solid @colorInfo;
+    background-color: tint(@colorInfo, @backgroundTintWeight);
+    color: @colorInfo;
+  }
+
+  &-warning {
+    border: 1px solid @colorWarning;
+    background-color: tint(@colorWarning, @backgroundTintWeight);
+    color: @colorWarning;
+  }
+
+  &-success {
+    border: 1px solid @colorSuccess;
+    background-color: tint(@colorSuccess, @backgroundTintWeight);
+    color: @colorSuccess;
+  }
+}

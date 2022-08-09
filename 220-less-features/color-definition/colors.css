@@ -1,0 +1,14 @@
+.container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+}
+.item {
+  padding: 10px;
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+.item:hover {
+  background-color: rgba(255, 0, 0, 0.3);
+}
