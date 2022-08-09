@@ -1,0 +1,9 @@
+@color: red + #00ff00;
+p {
+  color: @color;
+  text-align: left;
+
+  @media screen and (min-width: 450px) {
+    text-align: justify;
+  }
+}
