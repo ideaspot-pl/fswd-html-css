@@ -1,7 +1,6 @@
 # HTML and CSS Course Repository
 
-This is the code repository complementary for the **HTML and CSS** Course, which is part of IdeaSpot's Full-Stack Web
-Developer Course.
+This is the code repository complementary for the **HTML and CSS** Course by [IdeaSpot](https://ideaspot.co.uk).
 
 The course is available here:
 ...

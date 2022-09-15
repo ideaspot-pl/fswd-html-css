@@ -1,0 +1,16 @@
+body {
+    background-color: #fbffbc;
+    color: #474747;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px;
+}
+
+a {
+    color: #710101;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ef0000
+}
+

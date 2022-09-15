@@ -1,0 +1,7 @@
+{
+  "watchFolder": ".",
+  "outputFolder": ".",
+  "mainFile":  "app.less",
+  "sourceMap": true,
+  "minified":  true
+}

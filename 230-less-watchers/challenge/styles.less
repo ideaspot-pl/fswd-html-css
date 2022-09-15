@@ -1,0 +1,12 @@
+@import "variables";
+
+p {
+  color: @colorInvisible;
+
+  &::after {
+    color: @colorVisible;
+    font-weight: bold;
+    content: "Well done!";
+    display: block;
+  }
+}

@@ -1,0 +1,19 @@
+@bgColor: #fbffbc;
+@fontColor: #474747;
+@linkColor: #710101;
+
+body {
+    background-color: @bgColor;
+    color: @fontColor;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px;
+}
+
+a {
+    color: @linkColor;
+    font-weight: bold;
+}
+
+a:hover {
+    color: lighten(@linkColor, 30%);
+}
